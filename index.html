@@ -1,2 +1,76 @@
-<html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wir bauen um! – Anna17 GmbH</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- GitHub Pages에서 프로젝트 페이지 경로를 쓸 때는 base를 켜세요 (레포 이름로 변경)
+  <base href="/terua05.github.io/" /> -->
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#5f6570;
+      --accent:#ffc107; /* Bau/Warning 느낌 */
+      --card:#f7f8fa;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg); color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "Noto Sans KR", Arial, sans-serif;
+      display:grid; place-items:center; min-height:100vh; line-height:1.6;
+    }
+    main{
+      width:min(780px, 92vw);
+      text-align:center; padding:32px 22px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:10px; font-weight:700;
+      padding:10px 14px; border-radius:999px; border:1px solid #e3e6ee; background:var(--card);
+    }
+    .emoji{font-size:22px}
+    h1{margin:18px 0 6px; font-size:clamp(24px,3.6vw,34px); letter-spacing:-.01em}
+    p{margin:10px 0; font-size:clamp(15px,2.6vw,18px)}
+    .contact{margin-top:16px; padding:18px; border:1px dashed #e1e4ec; border-radius:14px; background:#fbfcff}
+    .contact b{display:block; margin-bottom:6px}
+    .grid{display:grid; gap:8px; justify-content:center}
+    a{color:inherit}
+    .cta{
+      display:inline-block; margin-top:18px; padding:10px 14px; font-weight:700; text-decoration:none;
+      border-radius:10px; border:1px solid #e3e6ee; background:linear-gradient(#fff,#f9fafc);
+    }
+    .tape{height:8px; width:100%; margin:22px 0; background:
+      repeating-linear-gradient(45deg, var(--accent) 0 16px, #222 16px 32px);
+      border-radius:6px}
+    footer{margin-top:14px; color:var(--muted); font-size:13px}
+  </style>
+  <meta property="og:title" content="Wir bauen um! – Anna17 GmbH" />
+  <meta property="og:description" content="Unsere Website wird gerade überarbeitet. Bald sind wir mit neuem Design wieder für Sie da." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <main role="main" aria-label="Wartungsnachricht">
+    <div class="badge" aria-label="Baustellenhinweis"><span class="emoji" aria-hidden="true">🚧</span> Wir bauen um!</div>
+    <h1>Unsere Website wird gerade überarbeitet.</h1>
+    <p>Bald sind wir mit neuem Design wieder für Sie da.</p>
+
+    <div class="tape" aria-hidden="true"></div>
+
+    <section class="contact" aria-label="Kontakt">
+      <b>Für Anfragen erreichen Sie uns unter:</b>
+      <div class="grid">
+        <div>Anna17 GmbH</div>
+        <div>Ansprechpartner: Siegward Gerstgrasser</div>
+        <div>📧 <a href="mailto:info@anna17.de">info@anna17.de</a></div>
+        <div>📞 <a href="tel:+4989724495010">089/7244950-10</a></div>
+      </div>
+    </section>
+
+    <a class="cta" href="mailto:info@anna17.de">E‑Mail senden</a>
+
+    <footer>Vielen Dank für Ihr Verständnis!</footer>
+  </main>
+</body>
 </html>
